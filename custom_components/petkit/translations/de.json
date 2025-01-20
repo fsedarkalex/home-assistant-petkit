@@ -1,0 +1,155 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "PetKit-Konto ist bereits konfiguriert",
+            "reauth_successful": "Reauthentifizierung war erfolgreich"
+        },
+        "error": {
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_auth": "Ungültige Authentifizierung. Sind Ihre Zugangsdaten korrekt?",
+            "no_devices": "Keine Geräte auf dem Konto gefunden",
+            "server_busy": "PetKit-Server sind ausgelastet. Bitte versuchen Sie es später erneut.",
+            "petkit_error": "Unbekannter Fehler aufgetreten. Bitte sehen Sie sich die Home Assistant-Protokolle für weitere Details an.",
+            "region_error": "Bitte wählen Sie das Land aus, das mit Ihrem Konto verbunden ist.",
+            "timezone_error": "Eine Zeitzone konnte nicht gefunden werden. Wenn Sie Home Assistant als eigenständigen Docker-Container ausführen, müssen Sie die TZ-Umgebungsvariable definieren. Wenn die TZ-Variable definiert ist oder Sie Home Assistant OS ausführen, wurde Ihre Zeitzone nicht in der tzlocal-Bibliothek gefunden - Bitte wählen Sie manuell eine Zeitzone während der Einrichtung."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "email": "PetKit-Konto E-Mail",
+                    "password": "PetKit-Konto Passwort",
+                    "region": "Wählen Sie das Land aus, das mit Ihrem Konto verbunden ist",
+                    "timezone": "Wählen Sie manuell eine Zeitzone aus oder versuchen Sie, sie automatisch festzulegen",
+                    "polling_interval": "Polling-Intervall (Sekunden)",
+                    "use_ble_relay": "Verwenden Sie das PetKit BLE-Relais (falls verfügbar)"
+                },
+                "title": "Geben Sie Ihre PetKit-Anmeldedaten ein"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "email": "PetKit-Konto E-Mail",
+                    "password": "PetKit-Konto Passwort",
+                    "region": "Wählen Sie das Land aus, das mit Ihrem Konto verbunden ist",
+                    "timezone": "Wählen Sie manuell eine Zeitzone aus oder versuchen Sie, sie automatisch festzulegen",
+                    "polling_interval": "Polling-Intervall (Sekunden)",
+                    "use_ble_relay": "Verwenden Sie das PetKit BLE-Relais (falls verfügbar)"
+                },
+                "title": "Mit Ihren PetKit-Anmeldedaten erneut einloggen"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "petkit_options": {
+                "data": {
+                    "region": "Wählen Sie das Land aus, in dem Ihr Konto erstellt wurde",
+                    "timezone": "Wählen Sie manuell eine Zeitzone aus oder versuchen Sie, sie automatisch festzulegen",
+                    "polling_interval": "Polling-Intervall (Sekunden)",
+                    "use_ble_relay": "Verwenden Sie das PetKit BLE-Relais (falls verfügbar)"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "water_level": {
+                "name": "Wasserstand"
+            },
+            "food_level": {
+                "name": "Füllstand des Futters"
+            },
+            "battery_installed": {
+                "name": "Batterie installiert"
+            },
+            "battery": {
+                "name": "Batterie"
+            },
+            "wastebin": {
+                "name": "Abfalleimer"
+            },
+            "litter": {
+                "name": "Streu"
+            },
+            "deodorizer": {
+                "name": "Lufterfrischer"
+            },
+            "manually_paused": {
+                "name": "Manuell pausiert"
+            },
+            "pura_air_liquid": {
+                "name": "Pura Air Flüssigkeit"
+            },
+            "food_level_hopper_one": {
+                "name": "Futterstand Trichter 1"
+            },
+            "food_level_hopper_two": {
+                "name": "Futterstand Trichter 2"
+            }
+        },
+        "button": {
+            "reset_filter": {
+                "name": "Filter zurücksetzen"
+            },
+            "reset_desiccant": {
+                "name": "Desiccant zurücksetzen"
+            },
+            "cancel_manual_feed": {
+                "name": "Manuelle Fütterung abbrechen"
+            },
+            "call_pet": {
+                "name": "Haustier rufen"
+            },
+            "start_cleaning": {
+                "name": "Reinigung starten/wiederaufnehmen"
+            },
+            "pause_cleaning": {
+                "name": "Reinigung pausieren"
+            },
+            "odor_removal": {
+                "name": "Geruchsbeseitigung"
+            },
+            "reset_deodorizer": {
+                "name": "Lufterfrischer zurücksetzen"
+            },
+            "reset_pura_air_liquid": {
+                "name": "Pura Air Flüssigkeit zurücksetzen"
+            },
+            "n50_reset": {
+                "name": "N50 Geruchsbeseitiger zurücksetzen"
+            },
+            "light_on": {
+                "name": "Licht einschalten"
+            },
+            "start_maintenance": {
+                "name": "Wartungsmodus starten"
+            },
+            "exit_maintenance": {
+                "name": "Wartungsmodus beenden"
+            },
+            "pause_exit_maintenance": {
+                "name": "Wartungsmodus beenden pausieren"
+            },
+            "resume_exit_maintenance": {
+                "name": "Wartungsmodus beenden fortsetzen"
+            },
+            "dump_litter": {
+                "name": "Streu entleeren"
+            },
+            "pause_dump_litter": {
+                "name": "Streu entleeren pausieren"
+            },
+            "resume_dump_litter": {
+                "name": "Streu entleeren fortsetzen"
+            },
+            "food_replenished": {
+                "name": "Futter nachgefüllt"
+            },
+            "start_cal": {
+                "name": "Kalibrierung starten"
+            },
+            "stop_cal": {
+                "name": "Kalibrierung stoppen"
+            }
+        }
+    }
+}
